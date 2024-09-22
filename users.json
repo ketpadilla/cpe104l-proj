@@ -1,0 +1,56 @@
+[
+    {
+        "email": "john.doe@example.com",
+        "is_admin": false,
+        "password": "Imadogimadog1!",
+        "username": "John Doe"
+    },
+    {
+        "email": "jane.smith@example.com",
+        "is_admin": true,
+        "password": "Pa$$w0rd123",
+        "username": "Jane Smith"
+    },
+    {
+        "email": "alice.johnson@example.com",
+        "is_admin": false,
+        "password": "Qwerty!23",
+        "username": "Alice Johnson"
+    },
+    {
+        "email": "lolzers@gmail.com",
+        "is_admin": false,
+        "password": "hehehe",
+        "username": "checkmeet"
+    },
+    {
+        "email": "rabusayap@gmail.com",
+        "is_admin": false,
+        "password": "nanaymo",
+        "username": "batmandagreat"
+    },
+    {
+        "email": "mickbautista51@gmail.com",
+        "is_admin": false,
+        "password": "nanaymo",
+        "username": "checkmeetmeet"
+    },
+    {
+        "email": "robinpadilla@gmail.com",
+        "is_admin": true,
+        "password": "demodemo",
+        "username": "Padilla"
+    },
+    {
+        "email": "sirjp@gmail.com",
+        "is_admin": true,
+        "password": "demodemo",
+        "username": "Padilla"
+    },
+    {
+        "email": "jansen@gmail.com",
+        "is_admin": false,
+        "password": "imadogimadog",
+        "username": "jansen"
+    }
+]
