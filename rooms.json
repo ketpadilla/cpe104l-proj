@@ -1,0 +1,212 @@
+[
+    {
+        "basePrice": 100,
+        "bookId": "BOOK-1726976454",
+        "id": "standard-001",
+        "isBooked": true,
+        "type": "Standard Room"
+    },
+    {
+        "basePrice": 100,
+        "bookId": "BOOK-1726976091",
+        "id": "standard-002",
+        "isBooked": true,
+        "type": "Standard Room"
+    },
+    {
+        "basePrice": 100,
+        "bookId": "BOOK-1726976295",
+        "id": "standard-003",
+        "isBooked": true,
+        "type": "Standard Room"
+    },
+    {
+        "basePrice": 100,
+        "bookId": "BOOK-1726976308",
+        "id": "standard-004",
+        "isBooked": true,
+        "type": "Standard Room"
+    },
+    {
+        "basePrice": 100,
+        "bookId": "BOOK-1726976490",
+        "id": "standard-005",
+        "isBooked": true,
+        "type": "Standard Room"
+    },
+    {
+        "basePrice": 100,
+        "bookId": "BOOK-1726976924",
+        "id": "standard-006",
+        "isBooked": true,
+        "type": "Standard Room"
+    },
+    {
+        "basePrice": 100,
+        "bookId": "BOOK-1726976964",
+        "id": "standard-007",
+        "isBooked": true,
+        "type": "Standard Room"
+    },
+    {
+        "basePrice": 100,
+        "bookId": "BOOK-1726980277",
+        "id": "standard-008",
+        "isBooked": true,
+        "type": "Standard Room"
+    },
+    {
+        "basePrice": 100,
+        "bookId": "BOOK-1726980449",
+        "id": "standard-009",
+        "isBooked": true,
+        "type": "Standard Room"
+    },
+    {
+        "basePrice": 100,
+        "bookId": "BOOK-1726980500",
+        "id": "standard-010",
+        "isBooked": true,
+        "type": "Standard Room"
+    },
+    {
+        "basePrice": 250,
+        "bookId": "BOOK-1726981507",
+        "id": "luxury-001",
+        "isBooked": true,
+        "type": "Luxury Room"
+    },
+    {
+        "basePrice": 250,
+        "bookId": "BOOK-1726981630",
+        "id": "luxury-002",
+        "isBooked": true,
+        "type": "Luxury Room"
+    },
+    {
+        "basePrice": 250,
+        "bookId": "BOOK-1726990242",
+        "id": "luxury-003",
+        "isBooked": true,
+        "type": "Luxury Room"
+    },
+    {
+        "basePrice": 250,
+        "bookId": "BOOK-1726989891",
+        "id": "luxury-004",
+        "isBooked": true,
+        "type": "Luxury Room"
+    },
+    {
+        "basePrice": 250,
+        "bookId": "BOOK-1726989583",
+        "id": "luxury-005",
+        "isBooked": true,
+        "type": "Luxury Room"
+    },
+    {
+        "basePrice": 250,
+        "bookId": null,
+        "id": "luxury-006",
+        "isBooked": false,
+        "type": "Luxury Room"
+    },
+    {
+        "basePrice": 250,
+        "bookId": null,
+        "id": "luxury-007",
+        "isBooked": false,
+        "type": "Luxury Room"
+    },
+    {
+        "basePrice": 250,
+        "bookId": null,
+        "id": "luxury-008",
+        "isBooked": false,
+        "type": "Luxury Room"
+    },
+    {
+        "basePrice": 250,
+        "bookId": null,
+        "id": "luxury-009",
+        "isBooked": false,
+        "type": "Luxury Room"
+    },
+    {
+        "basePrice": 250,
+        "bookId": null,
+        "id": "luxury-010",
+        "isBooked": false,
+        "type": "Luxury Room"
+    },
+    {
+        "basePrice": 500,
+        "bookId": null,
+        "id": "penthouse-001",
+        "isBooked": false,
+        "type": "Penthouse"
+    },
+    {
+        "basePrice": 500,
+        "bookId": "BOOK-1726984635",
+        "id": "penthouse-002",
+        "isBooked": true,
+        "type": "Penthouse"
+    },
+    {
+        "basePrice": 500,
+        "bookId": null,
+        "id": "penthouse-003",
+        "isBooked": false,
+        "type": "Penthouse"
+    },
+    {
+        "basePrice": 500,
+        "bookId": "BOOK-1726988687",
+        "id": "penthouse-004",
+        "isBooked": true,
+        "type": "Penthouse"
+    },
+    {
+        "basePrice": 500,
+        "bookId": null,
+        "id": "penthouse-005",
+        "isBooked": false,
+        "type": "Penthouse"
+    },
+    {
+        "basePrice": 500,
+        "bookId": null,
+        "id": "penthouse-006",
+        "isBooked": false,
+        "type": "Penthouse"
+    },
+    {
+        "basePrice": 500,
+        "bookId": null,
+        "id": "penthouse-007",
+        "isBooked": false,
+        "type": "Penthouse"
+    },
+    {
+        "basePrice": 500,
+        "bookId": null,
+        "id": "penthouse-008",
+        "isBooked": false,
+        "type": "Penthouse"
+    },
+    {
+        "basePrice": 500,
+        "bookId": null,
+        "id": "penthouse-009",
+        "isBooked": false,
+        "type": "Penthouse"
+    },
+    {
+        "basePrice": 500,
+        "bookId": null,
+        "id": "penthouse-010",
+        "isBooked": false,
+        "type": "Penthouse"
+    }
+]
