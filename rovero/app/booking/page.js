@@ -7,10 +7,24 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 import { useCheckout } from '../../contexts/CheckoutContext';
 import { useAuth } from '../../contexts/AuthContext';
+import RoomSelector from '../../components/RoomSelector';
 
 const Page = () => {
   const router = useRouter();
-  const { roomId, addons, checkInDate, checkOutDate, guestCount, userInfo, updateRoomId, updateAddon, updateCheckInDate, updateCheckOutDate, updateGuestCount, updateUserInfo } = useCheckout();
+  const { 
+    roomId = 'standard-001', 
+    addons, 
+    checkInDate = new Date().toISOString().split('T')[0], 
+    checkOutDate = new Date(Date.now() + 86400000).toISOString().split('T')[0], 
+    guestCount = 1, 
+    userInfo, 
+    updateRoomId, 
+    updateAddon, 
+    updateCheckInDate, 
+    updateCheckOutDate, 
+    updateGuestCount, 
+    updateUserInfo 
+  } = useCheckout();
   const { user } = useAuth();
   const [priceDetails, setPriceDetails] = useState({
     subtotal: 0,
@@ -36,6 +50,7 @@ const Page = () => {
       setAvailableRooms(data);
     } catch (error) {
       console.error('Error fetching available rooms:', error);
+      setAvailableRooms([]); // Set to empty array in case of error
     }
   }, []);
 
@@ -163,22 +178,10 @@ const Page = () => {
     }
   };
 
-  const RoomSelector = ({ rooms, selectedRoom, onSelectRoom }) => (
-    <div className="room-selector">
-      <select 
-        value={selectedRoom} 
-        onChange={(e) => onSelectRoom(e.target.value)}
-        className="form-select custom-select"
-      >
-        <option value="">Select a Room</option>
-        {rooms.map((room) => (
-          <option key={room.id} value={room.id}>
-            {room.name} - ₱{room.basePrice.toLocaleString()}/night
-          </option>
-        ))}
-      </select>
-    </div>
-  );
+  const handleRoomSelect = (roomId) => {
+    // Handle room selection, update state, etc.
+    console.log('Selected room:', roomId);
+  };
 
   return (
     <RoveroLayout>
@@ -188,64 +191,14 @@ const Page = () => {
           <div className="row booking-page-wrapper">
             <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
               <div className="booking-page-content">
-                <div className="booking-room-info-area img-hover-effect-wrapper">
-                  <h2 className="mb-30">
-                    <RoomSelector 
-                      rooms={availableRooms} 
-                      selectedRoom={roomId} 
-                      onSelectRoom={(id) => {
-                        updateRoomId(id);
-                        fetchTotal();
-                      }} 
-                    />
-                  </h2>
-                  <div className="row">
-                    <div className="col-xl-6 col-lg-6 col-md-6 col-sm-7 col-12 img-hover-effect2">
-                      <img
-                        className="w-100"
-                        src="images/bg/booking-img.jpg"
-                        alt="booking image"
-                      />
-                    </div>
-                    <div className="col-xl-6  col-lg-6 col-md-6 col-sm-5 col-12  px-sm-0 px-md-3">
-                    <div className="booking-room-info-left">
-  <div className="title">
-    <h2 className="mb-0">
-      {selectedRoomDetails ? selectedRoomDetails.name : "Select a Room"}
-    </h2>
-  </div>
-  {selectedRoomDetails && (
-    <ul className="booking-r-info mt-35">
-      <li className="single-rd-info">
-        <img src="images/icon/booking-icon1.png" alt="" className="rd-info-icon" />
-        <span className="d-inline-block text-color mt-10 ml-20">
-          {selectedRoomDetails.size || "30 sf"}
-        </span>
-      </li>
-      <li className="single-rd-info">
-        <img src="images/icon/booking-icon2.png" alt="" className="rd-info-icon" />
-        <span className="d-inline-block text-color mt-10 ml-20">
-          {selectedRoomDetails.guests || "3"} Guests
-        </span>
-      </li>
-      <li className="single-rd-info">
-        <img src="images/icon/booking-icon3.png" alt="" className="rd-info-icon" />
-        <span className="d-inline-block text-color mt-10 ml-20">
-          {selectedRoomDetails.beds || "3"} Beds
-        </span>
-      </li>
-      <li className="single-rd-info">
-        <img src="images/icon/booking-icon4.png" alt="" className="rd-info-icon" />
-        <span className="d-inline-block text-color mt-10 ml-20">
-          {selectedRoomDetails.view || "City View"}
-        </span>
-      </li>
-    </ul>
-  )}
-</div>
-                    </div>
-                  </div>
-                </div>
+                <RoomSelector
+                  rooms={availableRooms}
+                  selectedRoom={roomId}
+                  onSelectRoom={(id) => {
+                    updateRoomId(id);
+                    fetchTotal();
+                  }}
+                />
                 <div className="booking-extra-service bp-cnt-ex-ser rp-service mt-50">
                   <h2 className="mb-30">Add Extra Service</h2>
                   <ul>

@@ -13,7 +13,7 @@ const Hero1 = () => {
               <div className="col-xl-6 col-lg-6  col-md-7  col-sm-12 col-12">
                 <div className="slider-content slider-content1 mt--10 mr-xl-2 position-relative">
                   <span className="theme-color text-uppercase fontNoto f-700">
-                    SHET
+                    Hi sir
                   </span>
                   <h1
                     className="mb-30 mt-1 f-700"
@@ -21,14 +21,14 @@ const Hero1 = () => {
                     data-aos-duration={2000}
                     data-aos-delay={150}
                   >
-                    Bat ka kasi dito nagbook tanga
+                    Booking Mapuan
                   </h1>
                   <p
                     className="mb-45"
                     data-aos="fade-right"
                     data-aos-duration={1700}
                   >
-                    Yan tuloy nahihirapan kami magcode ng website sayo
+                    Sir ipasa nyo kami pls ;-;
                   </p>
                   <div className="my-btn d-inline-block">
                     <Link href="rooms-details" className="btn theme-bg">
@@ -114,7 +114,7 @@ const Hero1 = () => {
               <div className="col-xl-6 col-lg-6  col-md-7  col-sm-12 col-12">
                 <div className="slider-content slider-content1 mt--10 mr-xl-2 position-relative">
                   <span className="theme-color text-uppercase fontNoto f-700">
-                    Its Amazing
+                    Hi sir
                   </span>
                   <h1
                     className="mb-30 mt-1 f-700"

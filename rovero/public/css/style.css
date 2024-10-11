@@ -340,6 +340,348 @@ p {
   left: 35.5%;
 }
 
+/* 
+  Theme Name: Rovero - Hotel & Booking Service Website Html Template
+  Date Created: May 12, 2024
+  Last Update: May 12, 2024
+  Author: eThemeStudio
+  Support: xuwelkhan@gmail.com
+  Description: Hotel & Booking Service HTML Template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. hero area
+4. intro area
+5. room search area
+6. rooms area
+7. video area
+8. testimonial area
+9. subscription area
+10. blog area
+11. offer area
+12. brand area
+13. footer area
+14 about page
+-- about area
+-- choose us area
+15. rooms page
+16. rooms details page
+17. blog page
+18. booking page
+19. checkout page
+20. confirmation page
+21. blog details page
+22. contact page
+*/
+
+/* 1. Theme default css
+-------------------------------------------------------------- */
+
+:root {
+  --theme-color: #a18549;
+  --primary-color: #bbbbbb;
+  --main-color: #222222;
+  --text-color: #666666;
+  --section-bg: #fbf8f3;
+  --theme-border: #a18549;
+  --primary-border: #e5e5e5;
+  --meta-text-color: #999999;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #222222;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222222;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Noto Serif", serif;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: var(--theme-color);
+}
+h3 {
+  font-size: 48px;
+}
+h4 {
+  font-size: 36px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 21px;
+  line-height: 1.45;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.66;
+  color: var(--text-color);
+}
+.fontNoto {
+  font-family: "Noto Serif", serif;
+}
+/* title */
+.title span {
+  font-size: 16px;
+}
+.title h2 {
+  font-size: 30px;
+  line-height: 1.25;
+}
+.sub-title::before {
+  position: absolute;
+  content: "";
+  background: var(--theme-color);
+  width: 36px;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.section-content-title span {
+  font-size: 24px;
+  display: block;
+}
+.section-content-title h2 {
+  font-size: 48px;
+  line-height: 1.15;
+}
+.section-content-title p {
+  line-height: 1.7;
+}
+/* button  css*/
+.my-btn .btn {
+  padding: 6px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--theme-color);
+  color: #ffffff;
+  outline: 0 none;
+  text-transform: uppercase;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.9s ease-out;
+  -moz-transition: all 0.9s ease-out;
+  -ms-transition: all 0.9s ease-out;
+  -o-transition: all 0.9s ease-out;
+  -moz-transform: perspective(1px) translateZ(0px);
+  -webkit-transform: perspective(1px) translateZ(0px);
+  -o-transform: perspective(1px) translateZ(0px);
+  -ms-transform: perspective(1px) translateZ(0px);
+  transform: perspective(1px) translateZ(0px);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color;
+  transition-property: color;
+  vertical-align: middle;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.my-btn .btn::before {
+  background-color: #ffffff;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -moz-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  z-index: -1;
+}
+.my-btn .btn:hover::before,
+.my-btn .btn:focus::before,
+.my-btn .btn:active::before {
+  -moz-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.my-btn a.btn:hover,
+.my-btn .btn:hover,
+.my-btn a.btn:focus,
+.my-btn a.btn:active,
+.my-btn .btn:focus,
+.my-btn .btn:active {
+  color: var(--theme-color);
+}
+.slider-content .my-btn .btn {
+  padding: 15px 48px;
+  font-size: 18px;
+}
+/* btn2 css */
+.my-btn2 .btn {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--main-color);
+  padding: 0;
+  border-bottom: 1px solid #ffffff;
+}
+.my-btn2 .btn::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 1px;
+  background: var(--theme-color);
+  bottom: -1px;
+  left: -1px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.my-btn2:hover .btn::before {
+  width: 103%;
+}
+.my-btn2 .btn:hover {
+  color: var(--theme-color);
+}
+.my-btn2 .btn:hover .blog-hm1-wrapper .my-btn2 .btn,
+.blog-btn .btn,
+.offer-btn .btn {
+  color: #ffffff;
+}
+.blog-hm1-wrapper .my-btn2 .btn:hover {
+  color: var(--theme-color);
+}
+/* home2 btn */
+.hm2 .my-btn .btn {
+  padding: 11px 39px;
+  font-size: 16px;
+}
+.hm2 .my-btn2 .btn {
+  font-size: 16px;
+}
+.transparent-btn .my-btn .btn {
+  color: var(--main-color);
+}
+.transparent-btn .my-btn .btn::before {
+  background: var(--theme-color);
+}
+.transparent-btn .my-btn .btn:hover {
+  color: #ffffff;
+}
+/* slick-arrow */
+.slick-arrow .l-a,
+.slick-arrow .r-a {
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  border: 1px solid var(--primary-border);
+  color: var(--main-color);
+  text-align: center;
+  z-index: 1;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 18px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  left: 70px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+.slick-arrow .r-a {
+  right: 70px;
+  left: auto;
+}
+.slick-arrow .l-a:hover,
+.slick-arrow .r-a:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: var(--theme-color);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.07);
+}
+/* hm2 hero arrow*/
+.hm2 .slider-active .slick-arrow .l-a,
+.hm2 .slider-active .slick-arrow .r-a {
+  border: 1px solid var(--theme-color);
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+  color: #ffffff;
+}
+.hm2 .slider-active .slick-arrow .l-a:hover,
+.hm2 .slider-active .slick-arrow .r-a:hover {
+  background: var(--theme-color);
+}
+/* hm1 hero arrow */
+.hm1 .slider-active .slick-arrow .l-a,
+.hm1 .slider-active .slick-arrow .r-a {
+  top: auto;
+  bottom: -25px;
+  left: auto;
+  right: 13.5%;
+}
+.hm1 .slider-active .slick-arrow .r-a {
+  right: 10.2%;
+}
+/* feature arrow */
+.feature-hm1-active .slick-arrow .l-a,
+.feature-hm1-active .slick-arrow .r-a {
+  top: auto;
+  bottom: -20px;
+  left: 30.5%;
+}
+.feature-hm1-active .slick-arrow .r-a {
+  right: auto;
+  left: 35.5%;
+}
+
 /* dots css */
 .main-style .slick-dots {
   position: absolute;
@@ -1172,7 +1514,127 @@ p {
   border-radius: 4px;
   cursor: pointer;
 }
+.room-selector {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
+.room-type-selector {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.hotel-floor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.room {
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  color: #333;
+}
+
+.room.available {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.room.unavailable {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+.user-page-area {
+  background-color: #f8f9fa;
+}
+
+.user-sidebar {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.user-sidebar ul li button {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.user-sidebar ul li button:hover,
+.user-sidebar ul li.active button {
+  background-color: #f0f0f0;
+}
+
+.user-profile,
+.user-bookings {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+.room.selected {
+  border: 3px solid #FFA500;
+}
+
+.room:hover:not(:disabled) {
+  opacity: 0.8;
+}
+
+.room-type {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
 .close-btn:hover {
   background-color: #0056b3;
 }
@@ -1505,7 +1967,58 @@ p {
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
 }
+/* rovero/app/styles/booking.module.css */
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.room-card {
+  text-align: center;
+}
+
+.room-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.room-button.available:hover {
+  opacity: 0.9;
+}
+
+.room-button.unavailable:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
 /* 12. brand area
 -------------------------------------------------------------- */
 .single-brand img {
