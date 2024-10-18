@@ -22,8 +22,8 @@ const page = () => {
                 <div className="contact-text">
                   <h4 className="mb-15">Address</h4>
                   <p className="mb-0">
-                    20 Bordeshi, Amin Bazar
-                    <br /> Savar, Dhaka
+                  658 Muralla St, Intramuros,
+                    <br /> Manila, 1002 Metro Manila
                   </p>
                 </div>
               </div>
@@ -41,11 +41,11 @@ const page = () => {
                 <div className="contact-text">
                   <h4 className="mb-3">Phone Number</h4>
                   <p className="mb-0">
-                    <a className="d-block" href="tell:+1234567890">
-                      +123 456 7890
+                    <a className="d-block" href="tell:+639321234567">
+                      +63 932 1234 567
                     </a>
-                    <a className="d-block" href="tell:+1234567891">
-                      +01234 567 891
+                    <a className="d-block" href="tell:(02)8123-4567">
+                      (02) 8123-4567
                     </a>
                   </p>
                 </div>
@@ -64,11 +64,11 @@ const page = () => {
                 <div className="contact-text">
                   <h4 className="mb-3">Email Address</h4>
                   <p className="mb-0">
-                    <a className="d-block" href="#">
-                      hello@hotelian.com
+                    <a className="d-block" href="mailto:thefilipinas@fhc.com">
+                      thefilipinas@fhc.com
                     </a>
                     <a className="d-block" href="#">
-                      sales@hotelian.com
+                      thefilipinas-customerservice@fhc.com
                     </a>
                   </p>
                 </div>
@@ -130,11 +130,11 @@ const page = () => {
                           data-aos-duration={2000}
                         >
                           <input
-                            className="website w-100 primary-border pl-20 pt-15 pb-15 pr-10"
+                            className="subject w-100 primary-border pl-20 pt-15 pb-15 pr-10"
                             type="text"
-                            name="inputWebsite"
-                            id="inputWebsite"
-                            placeholder="Website"
+                            name="inputSubject"
+                            id="inputSubject"
+                            placeholder="Subject"
                             required=""
                           />
                           {/* /name */}
@@ -192,7 +192,9 @@ const page = () => {
             <div
               className="map-wrapper w-100 z-index1 rounded-0"
               id="mapwrapper"
-            />
+            >
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.9598836294203!2d120.97756537057258!3d14.588456918562752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca1877b11c59%3A0x29725a0f0cac1fa!2sMap%C3%BAa%20University!5e0!3m2!1sen!2sph!4v1729257854493!5m2!1sen!2sph" width="1175" height="450" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
           {/* /container */}
         </div>
