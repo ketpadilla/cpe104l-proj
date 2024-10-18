@@ -4,7 +4,7 @@ import Slider from "react-slick";
 
 const Testimonial = () => {
   return (
-    <div className="testimonial-area testimonial-bg position-relative">
+    <div className="testimonial-area testimonial-bg position-relative mb-100">
       <div className="container hm1-testi-padding pt-110">
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-7 col-md-9  col-sm-12 col-12">
